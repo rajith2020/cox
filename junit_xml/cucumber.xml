@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="28.572092">
+<testcase classname="getting the list of vechiles and datasetId using different combination" name="1 get list of all the vechiles" time="6.449792">
+<system-out><![CDATA[Given provided the valid API................................................passed
+When A user perform get request to get "datasetId"..........................passed
+Then A user perform get request to get "vehicleIds" using "datasetid".......passed
+Then Verify the response code is 200........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="getting the list of vechiles and datasetId using different combination" name="3 Get 500 when you not pass the datasetId  details" time="0.347123">
+<system-out><![CDATA[Given provided the valid API................................................passed
+When A user perform get request to get "datasetId"..........................passed
+Then A user perform get request to get "vehicleIds" not using "datasetid"...passed
+Then Verify the response code is 404........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="getting the list of vechiles and datasetId using different combination" name="2 Get list of all vechclie details" time="21.775177">
+<system-out><![CDATA[Given provided the valid API................................................passed
+When A user perform get request to get "datasetId"..........................passed
+Then A user perform get request to get "vehicleIds" using "datasetid".......passed
+Then Verify the sigle vechle pulled using datasetid and vehicleid...........passed
+Then Verify the response code is 200........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
